@@ -3,6 +3,8 @@
 
 function reversedSen(str) {
   //   const words = str.split(" ");
+  // The trim() method in JavaScript is used to remove whitespace from both ends of a string
+  // (but not inside the string).
   const words = str
     .trim()
     .split(" ")
@@ -15,7 +17,8 @@ function reversedSen(str) {
   }
   while (stack.length > 0) {
     result += stack.pop();
-    if (stack.length > 0) { //space between two words
+    if (stack.length > 0) {
+      //space between two words
       result += " ";
     }
   }
